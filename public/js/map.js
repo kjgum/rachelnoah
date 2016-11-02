@@ -192,7 +192,7 @@
               lng: -74.032453
           };
           var map = new google.maps.Map(document.getElementById('map'), {
-              zoom: 12,
+              zoom: 13,
               center: jc
           });
           var icon = '/../img/marker.png';
