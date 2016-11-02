@@ -15,6 +15,10 @@
         height: 400px;
         width: 400px;
     }
+    .white {
+        background-color: white;
+        padding: 5px;
+    }
     /*       .gm-svpc {
         display: none;
        }*/
@@ -24,19 +28,50 @@
 <body>
     <!--  AIzaSyB19c4AuP6zA4Xm4dSp_j1wlYggXkYbFTw  -->
     <div class="container">
+        <!-- header -->
         <div class="row text-center">
             <div class="col-md-6 col-md-offset-3">
                 <img src="content.png" class="text-center">
                 <img src="rnwhite.png" width="100%">
             </div>
         </div>
+        <hr>
+        <!-- picture -->
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <img src="rn3.jpg" class="img-responsive" width="100%">
+                <br>
+            </div>
+        </div>
+        <!-- bridegroom -->
+        <div class="row ">
+            <div class="col-md-4 col-md-offset-2 white">
+                <h2 class="text-center">bride</h2>
+            </div>
+            <div class="col-md-4 white">
+                <h2 class="text-center">groom</h2>
+            </div>
+        </div>
+        <!-- story -->
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+        </div>
+        <hr>
+        <!-- map -->
+        <div class="row">
+            <div class="col-md-4 col-md-offset-2">
+                <img src="Batello-restaurant-logo.png">
+                <p>502 Washington Blvd, Jersey City, NJ 07310</p>
+                <a href="https://www.google.com/maps/dir//Battello,+502+Washington+Blvd,+Jersey+City,+NJ+07310/@40.7254238,-74.0346416,17z/data=!4m15!1m6!3m5!1s0x89c25755af7f129b:0x73e22213ab9449f!2sBattello!8m2!3d40.7254238!4d-74.0324529!4m7!1m0!1m5!1m1!1s0x89c25755af7f129b:0x73e22213ab9449f!2m2!1d-74.0324529!2d40.7254238" target="_blank">directions</a>
+            </div>
+            <div class="col-md-4 text-center">
+                <div id="map"></div>
+            </div>
+        </div>
     </div>
-    <hr>
-    <img src="Batello-restaurant-logo.png">
     <br>
-    <img src="rn3.jpg" class="img-responsive" width="100px">
-    <br>
-    <div id="map"></div>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB19c4AuP6zA4Xm4dSp_j1wlYggXkYbFTw&callback=initMap">
     </script>
     <script src='map.js'></script>
