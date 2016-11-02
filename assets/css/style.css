@@ -12,12 +12,14 @@
         padding: 5px;
     }
 
- 
+ #map * {
+    overflow:visible;
+}
     
 
 
 /*loader*/
-    #loader {
+/*    #loader {
         position: absolute;
         left: 50%;
         top: 50%;
@@ -50,9 +52,7 @@
         100% {
             transform: rotate(360deg);
         }
-    }
-    /* Add animation to "page content" */
-    
+    }    
     .animate-bottom {
         position: relative;
         -webkit-animation-name: animatebottom;
@@ -86,4 +86,4 @@
     #myDiv {
         display: none;
         text-align: center;
-    }
+    }*/
