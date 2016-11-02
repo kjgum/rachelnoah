@@ -7,9 +7,12 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- my css -->
     <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Nixie+One" rel="stylesheet">
 </head>
+
 <body>
-<!-- <body onload="myFunction()" style="margin:0;"> -->
+    <!-- <body onload="myFunction()" style="margin:0;"> -->
     <!-- <div id="loader"></div> -->
     <!--  AIzaSyB19c4AuP6zA4Xm4dSp_j1wlYggXkYbFTw  -->
     <!-- <div class="container" style="display:none;" id="myDiv" class="animate-bottom"> -->
@@ -18,9 +21,13 @@
         <div class="row text-center">
             <div class="col-md-6 col-md-offset-3">
                 <!-- <img src="/img/content.png" class="text-center"> -->
-                <img src="/img/fallleaves.png" width="100%">
+                <img src="/img/fallleaves.png" width="100%" class="white">
                 <img src="/img/rnwhite.png" width="100%">
             </div>
+        </div>
+        <!-- countdown -->
+        <div class="row">
+            <h3 id="countdown"></h3>
         </div>
         <hr>
         <!-- picture -->
@@ -33,15 +40,17 @@
         <!-- bridegroom -->
         <div class="row ">
             <div class="col-md-4 col-md-offset-2 white">
-                <h2 class="text-center">bride</h2>
+                <img src="/img/bride.png" width="100px">
+                <h4>rachel schaff</h4>
             </div>
             <div class="col-md-4 white">
-                <h2 class="text-center">groom</h2>
+                <img src="/img/groom.png" width="100px">
+                <h4>noah fessler</h4>
             </div>
         </div>
         <!-- story -->
         <div class="row">
-            <div class="col-md-10 col-md-offset-1">
+            <div class="col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </div>
         </div>
@@ -62,7 +71,8 @@
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB19c4AuP6zA4Xm4dSp_j1wlYggXkYbFTw&callback=initMap">
     </script>
     <script src='/js/map.js'></script>
-<!--     <script type="text/javascript">
+    <script src='/js/countdown.js'></script>
+    <!--     <script type="text/javascript">
     var myVar;
 
     function myFunction() {

@@ -1,6 +1,6 @@
     body {
-        /*background-color: #42464A;*/
-        background-color: #EBE3CD;
+        background-color: #42464A;
+        /*background-color: #EBE3CD;*/
     }
     
     #map {
@@ -11,16 +11,26 @@
     .white {
         background-color: white;
         padding: 5px;
+        font-family: 'Nixie One', cursive;
     }
-
- #map * {
-    overflow:visible;
-}
     
-
-
-/*loader*/
-/*    #loader {
+    #map * {
+        overflow: visible;
+    }
+    /*countdown*/
+    
+    #countdown {
+        text-align: center;
+        color: white;
+        font-family: 'Nixie One', cursive;
+        font-weight: 700;
+        /*font-size: 5em;*/
+        margin: 0 25%;
+        border-top: 1px solid;
+        border-bottom: 1px double;
+    }
+    /*loader*/
+    /*    #loader {
         position: absolute;
         left: 50%;
         top: 50%;
