@@ -195,7 +195,7 @@
               zoom: 12,
               center: jc
           });
-          var icon = 'marker.png';
+          var icon = '/../img/marker.png';
           var marker = new google.maps.Marker({
               position: jc,
               map: map,
