@@ -13,12 +13,20 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.text());
 app.use(bodyParser.json({type:'application/vnd.api+json'}));
 app.use(express.static(path.join(__dirname, 'public')));
-// routes
+
 app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname, 'index.html'));
 })
+app.get('/10.22.17', function(req, res) {
+    res.sendFile(path.join(__dirname, 'home.html'));
+})
 
+
+
+// app.get('/resume', function(req, res) {
+//     res.sendFile(path.join(__dirname, ''));
+// })
 
 app.listen(PORT, function(){
-  console.log("find me at: " + PORT);
+  console.log("App listening on port: " + PORT);
 })
